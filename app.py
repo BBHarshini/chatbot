@@ -1,5 +1,6 @@
-from transformers import pipeline
 import pandas as pd
+from transformers import pipeline
+
 import streamlit as st
 
 tqa = pipeline(task="table-question-answering", model="google/tapas-base-finetuned-wtq")
